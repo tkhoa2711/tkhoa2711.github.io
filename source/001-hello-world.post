@@ -1,20 +1,22 @@
 ;;;;;
 title: First ever blog post
 tags: coleslaw,sbcl,common lisp,lisp,markdown,blogging
-date: 2013-10-14 10:34:44
+date: 2014-12-19 10:32:32
 format: md
 ;;;;;
 
 Well, this is my first ever try with blogging. And I chose [Github Pages]
 (https://pages.github.com/) and [Coleslaw](https://github.com/redline6561/coleslaw) 
-and Mardown! I could have choose either Blogger or Wordpress, which seem to be 
+and Mardown! I could have chosen either Blogger or Wordpress, which seem to be 
 easier options for newbie. Okay, I'm a (average) developer and I do want to 
 enrich my web developement skill, also to catch up with the trend of internet 
 and web that is moving at the speed of light.
 
-In the next blog post, I'll write about my experience working on this blog. 
+In the near future, I'll write about my experience building on this blog. 
 Lastly, not to forget the _classical_:
 
 ```
 Hello World!
 ```
+
+Happy blogging!
