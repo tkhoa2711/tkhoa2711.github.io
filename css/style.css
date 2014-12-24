@@ -1,49 +1,146 @@
-#content { background: #fff; padding-top: 1em }
-#header { float: right; margin-left: 1em; margin-bottom: 1em }
-#coleslaw-logo { float: right; }
-a { text-decoration: none; color: #992900 }
-a.anchor { color: black }
-.date { font-style: italic }
-.title { margin-left: 1em }
-.article-meta { margin-left: 2.2em; margin-bottom: 2.2em }
-.archive-title { font-size: 1em } .article-title { font-size: 2em }
-.article-content { margin-left: 2.2em }
-.fineprint { text-align: center; font-size: .9em; margin-top: .5em }
-.tag-low { font-size: .8em; font-weight: 200 }
-.tag-medium { font-size: 1.2em; font-weight: 600 }
-.tag-high { font-size: 1.8em; font-weight: 800 }
-.navigation { font-size: 1.2em; border-bottom: 1px solid }
-body { background-color: white; font-family: Vollkorn; font-size: 14pt }
-pre { overflow: auto; margin-left: 1em; padding: 0.5em; border-left: 1px dashed;
-      background-color: white; padding: .75em .5em; font-family: (unquote mono-font) }
-tt { font-size: .9em; font-family: (unquote mono-font) }
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 
-/* Stolen from lisppaste for the colorize output of 3bmd */
-.paste { background-color: #F4F4F4; color: black; }
-.paste:hover { background-color: #F4F4F4; color: black; }
-.symbol { color : #770055; background-color : transparent; border: 0px; margin: 0px;}
-.special { color : #FF5000; background-color : inherit; }
-.keyword { color : #770000; background-color : inherit; }
-.comment { color : #007777; background-color : inherit; }
-.string { color : #777777; background-color : inherit; }
-.atom { color : #314F4F; background-color : inherit; }
-.macro { color : #FF5000; background-color : inherit; }
-.variable { color : #36648B; background-color : inherit; }
-.function { color : #8B4789; background-color : inherit; }
-.attribute { color : #FF5000; background-color : inherit; }
-.character { color : #0055AA; background-color : inherit; }
-.syntaxerror { color : #FF0000; background-color : inherit; }
-.diff-deleted { color : #5F2121; background-color : inherit; }
-.diff-added { color : #215F21; background-color : inherit; }
-span.paren1 { background-color : inherit; -webkit-transition: background-color 0.2s linear; }
-span.paren1:hover { color : inherit; background-color : #BAFFFF; }
-span.paren2 { background-color : inherit; -webkit-transition: background-color 0.2s linear; }
-span.paren2:hover { color : inherit; background-color : #FFCACA; }
-span.paren3 { background-color : inherit; -webkit-transition: background-color 0.2s linear; }
-span.paren3:hover { color : inherit; background-color : #FFFFBA; }
-span.paren4 { background-color : inherit; -webkit-transition: background-color 0.2s linear; }
-span.paren4:hover { color : inherit; background-color : #CACAFF; }
-span.paren5 { background-color : inherit; -webkit-transition: background-color 0.2s linear; }
-span.paren5:hover { color : inherit; background-color : #CAFFCA; }
-span.paren6 { background-color : inherit; -webkit-transition: background-color 0.2s linear; }
-span.paren6:hover { color : inherit; background-color : #FFBAFF; }
+@media all and (max-width: 700px) {
+    header, content, footer {
+        width: auto !important;
+        margin: 3px !important;
+    }
+}
+
+body {
+    margin:0;
+    padding:0;
+
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: #ffffff;
+    color: #444;
+}
+
+header, content, footer {
+    display: block;
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header *, content *, footer * {
+    max-width: 100%;
+}
+
+.article-meta {
+    display: block;
+    margin-bottom: 60px;
+}
+
+.article-title {
+    margin: 10px, 0px;
+}
+
+/* Elements */
+a:link, a:visited {
+    color: #4691AE;
+    text-decoration:none;
+}
+
+strong, b {
+    color: #C182AD;
+}
+
+em, i {
+    color: #3DBD41;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #a1b56c;
+}
+
+code {
+    color: #E5A846;
+    background-color: #282828;
+    font-family: 'monoOne', monospace;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+pre {
+    padding: 4px;
+    background-color: #282828;
+    color: #E5A846;
+    border-radius: 5px;
+    overflow:auto;
+}
+
+pre code {
+    border-radius: 0;
+    padding: 0;
+}
+
+ul,ol  {
+    /*padding-left: 10px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0px;
+}
+
+blockquote {
+    margin:0px;
+    padding-left:5px;
+    border-left: 3px solid #585858;
+}
+
+
+/* posts */
+.date {
+    font-size: 0.9em;
+    margin: 2px 0px;
+    padding: 0px;
+}
+
+/* pager */
+ul.pager {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+ul.pager li {
+    display: inline;
+    margin-right: 10px;
+}
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+header ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+header ul li {
+    display: inline;
+}
+
+/* footer */
+footer {
+    font-size: 0.9em;
+}
+
+footer .copyright {
+    float: left;
+}
+
+footer .poweredby {
+    float: right;
+}
+
+
