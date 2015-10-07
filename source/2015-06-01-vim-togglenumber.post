@@ -1,0 +1,11 @@
+;;;;;
+title: vim-togglenumber
+tags: vim
+date: 2015-06-01 01:39:23
+format: md
+;;;;;
+Today I publish my first plugin [vim-togglenumber](https://github.com/tkhoa2711/vim-togglenumber.git) for vim, the editor I've been using for more than 2 years now. So far I haven't found a satisfying plugin which allow me to cycle between different numbering modes in vim. And then I thought why not create one, and also learn how to formally write a plugin for vim.
+
+Even though the main logic is (very) simple - within a few lines of code, things get complicated regarding the packaging, documentation, compatibility check, etc. I've got to learn quite few things during these processes as well.
+
+Last but not least, not to forget useful instructions for installation and usage. User experience is a must.
